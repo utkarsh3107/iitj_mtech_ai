@@ -1,0 +1,7 @@
+ minerve-mampaka-lte  svn r 27
+
+$ svn checkout http://minerve-mampaka-lte.googlecode.com/svn/ minerve-mampaka-lte-read-only
+
+https://code.google.com/p/minerve-mampaka-lte/source/checkout
+
+
