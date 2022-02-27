@@ -1059,6 +1059,8 @@ INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/latex-fonts/lasy5.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
+INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi12.tfm
@@ -1117,8 +1119,6 @@ INPUT ./graph_img5_BW.png
 INPUT ./graph_img5_BW.png
 INPUT ./graph_img5_BW.png
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./graph_img6_BW.png
 INPUT ./graph_img6_BW.png
 INPUT graph_img6_BW.png
@@ -1204,18 +1204,6 @@ INPUT ./graph_img19_BW.png
 INPUT ./graph_img19_BW.png
 INPUT ./graph_img19_BW.png
 INPUT ./graph_img19_BW.png
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss12.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss8.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss8.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss8.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss10.tfm
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss8.tfm
-INPUT ./example-figure.pdf
-INPUT ./example-figure.pdf
-INPUT example-figure.pdf
-INPUT ./example-figure.pdf
-INPUT ./example-figure.pdf
-INPUT ./example-figure.pdf
 INPUT gta-lecture.aux
 INPUT ./Week-05.aux
 INPUT Week-05.aux
@@ -1236,14 +1224,10 @@ INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb

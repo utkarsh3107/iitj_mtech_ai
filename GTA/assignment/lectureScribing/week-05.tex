@@ -3,15 +3,15 @@
 % Second is lecture title.
 % Third is lecturer (either Anupam Gupta or Ryan O'Donnell).
 % Fourth is your name.
-\lecture{5}{Kernel, tournaments and king}{Anand Mishra}{Utkarsh Thusoo}
+\lecture{5}{Lecture 9 and 10}{Anand Mishra}{Utkarsh Thusoo}
 
 
 
 
+Continuation from Lecture 8. 
+\section{Lecture 9: Kernel, tournaments and king}
 
-Continuation from Lecture 8
-
-\section{Kernel in a directed graph}
+\subsection{Kernel in a directed graph}
 
 Is a set of vertices $S \subseteq V(D)$ such that $S$ indicates no edges and every vertex outsied of S has a succssor in $S$. Concept of kernel is only defined for directed graph. 
 % Here's a citation~\cite{Kar84a}.
@@ -59,9 +59,8 @@ An orientation of graph $G$ is a directed graph $D$ obtained from $G$ by choosin
 \myfig{.375}{graph_img9_BW.png}{Undirected to Directed graph}{fig:Directed graph to find in/out degree}
  
  
-\section{Tournament in graph}
-
-Tournament is an orientation of a complete graph. 
+\subsection{Tournament in graph}
+is an orientation of a complete graph. 
 
 \subsection{King of the tournament}
 King of the tournament is a vertex from where all the other vertices are reachable by a path of length of 2 at most.
@@ -123,6 +122,7 @@ In context of directed graph we can define a tree such that if we take any two v
     \item Tree is a bipartite graph.
 \end{itemize}
 
+\section{Lecture 10: Common definitions}
 
 \subsection{Distance in a graph}
 If graph $G$ has a $u-v$ path, then the distance between $u$ to $v$ is written as $d(u-v)$ is the least length of $u-v$ path. This distance is the shortest distance. For the given graph
@@ -205,130 +205,3 @@ Also,
     \draw[->] (n-5-A) -- (n-1-B);
     \draw[->] (l-A) -- node[above]{$f$}(l-A.center-|l-B.west);
 \end{tikzpicture} 
-
-
-\section{Math stuff}
-\begin{tikzpicture}
-    \foreach[count=\i] \lseti/\lsetmi in {A/{$a$,$b$,$c$},B/{5,6,$z$}} {
-        \begin{scope}[local bounding box=\lseti, x=2cm, y=0.5cm]
-        \foreach[count=\j] \lj in \lsetmi {
-            \node[minimum width=1em] (n-\j-\lseti) at (\i,-\j) {\lj};
-        }
-        \end{scope}
-        \node[ellipse, draw, fit=(\lseti), 
-        label={[name=l-\lseti]above:$\lseti$}] {};
-    }
-    \draw[->] (n-1-A) -- (n-1-B);
-    \draw[->] (n-2-A) -- (n-2-B);
-    \draw[->] (n-3-A) -- (n-3-B);
-    \draw[->] (l-A) -- node[above]{$f$}(l-A.center-|l-B.west);
-\end{tikzpicture} 
-
-Please make an effort to typeset things nicely.  There are quite a few macros in the lpsdp.sty file.  Below are illustrated how to do some basic things; please study the \LaTeX\ carefully.
-
-Here's a typical LP in standard/equational form, with an equation number on one of the constraints.
-\begin{gather}
-    \min \quad c^\top x                       \nonumber\\
-    \begin{align}
-        \text{s.t.} \quad   Ax &= b           \nonumber\\
-                             x &\geq 0       \label{eqn:nonnegative}
-    \end{align}
-\end{gather}
-
-\noindent Here's a reference to the~\eqref{eqn:nonnegative} nonnegativity constraint.  Some more LPs:
-
-\begin{gather*}
-    \min \quad 3x_1 - 5x_2 \\
-    \begin{aligned}
-        \text{s.t.} \quad   x_1 + 2x_2 &\leq 6\\
-                            2x_1 + x_2 &\leq 6\\
-                            2x_1 + 2x_2 &\geq 7\\
-                            x_1,x_2 &\geq 0
-    \end{aligned}
-\end{gather*}
-
-\begin{alignat*}{3}
-    \text{minimize}&   \quad & 3x_1 - 5x_2 + 2x_3 - x_4&       & &\\
-    \text{subject to}& \quad & x_1 + 2x_2 - 4x_3 + x_4 &\leq 6 & &\\
-                           & & -x_1 + 3x_2 - x_3 - x_4 &\geq 7 & &\\
-                           & & x_i &\geq 0  & &\quad \forall i = 1\dots 4
-\end{alignat*}
-
-
-Let's do some matrices:
-\[
-\begin{pmatrix}
-    1 & \rho & \rho\\
-    \rho & 1 & \rho\\
-    \rho & \rho & 1\\
-\end{pmatrix},
-\quad \text{or alternately,} \quad
-\begin{bmatrix}
-    1 & 2 \\
-    3 & 4 \\
-\end{bmatrix}.
-\]
-More generically:
-\[
-    A = \begin{bmatrix}
-            \vrule & \vrule & & \vrule\\
-            A_{1} & A_{2} & \cdots & A_{n} \\
-            \vrule & \vrule & & \vrule
-        \end{bmatrix}
-      = \begin{bmatrix}
-            \text{---} & a_1 & \text{---} \\
-            \text{---} & a_1 & \text{---} \\
-                       & \vdots &  \\
-            \text{---} & a_n & \text{---} 
-        \end{bmatrix}
-\]
-
-
-Here's some more random typesetting: 
-\begin{itemize}
-\item ``$\PTIME$~vs.~$\NP$, where the former means time $\poly(n)$'';
-\item $\wt{O}(f(x)) \text{ is } f(x) \cdot \polylog(f(x))$;
-\item $\displaystyle 
-        g(x) = \begin{cases}
-                   \sin(2\theta) & \text{if $\theta \leq \pi$,}\\
-                   \max\{\cos^2\theta, \tfrac13\} & \text{if $\theta > \pi$.}
-               \end{cases}
-      $
-      
-\end{itemize}
-Please don't write $max(A)$ when you mean $\max(A)$, or $log(n)$ when you mean $\log(n)$, or "quotes" when you mean ``quotes''.\\
-
-A theorem and a proof:
-\begin{theorem} $(a+b)^2 = a^2 + 2ab + b^2$.
-\end{theorem}
-\begin{proof}
-Let for the reader.
-\end{proof}
-
-\bigskip
-
-Here's what to do if your proof ends on an equation:
-\begin{proof}
-It's easy:
-\[
-    (a+b)^2 = (a+b)(a+b) = (a+b)a + (a+b)b = a^2 + ba + ab + b^2 = a^2 + 2ab + b^2 \qedhere
-\]
-\end{proof}
-
-Please insert figures liberally.  It's probably best if ``vector graphics'' are in pdf or png format, and ``bitmap graphics'' are in jpg format, but lots formats are supported.  There's a macro defined to make things easy.  Inkscape is a pretty reasonable, free program in which to draw figures.\footnote{Ryan: I admit, I sometimes draw figures in Powerpoint.}
- 
-%%%%%%%% FIGURES
-% first parameter is a real number which is the scale factor; 
-% second is the file name; 
-% third is caption; 
-% fourth gives the LaTeX label for future \ref
-\myfig{.375}{example-figure.pdf}{The region $g_1 > 0, g_2 > -\tfrac{\rho}{\sqrt{1-\rho^2}}g_1$.}{fig:my-example}
-
-Once you've inserted it, you can refer to it as Figure~\ref{fig:my-example}.\\
-
-Finally, if you have citations, see the commented-out stuff in the \LaTeX~here.
-
-%%%%%%%%%%% If you have citations then uncomment the line below:
-%
-%\insertbibliography{lpsdp}
-
