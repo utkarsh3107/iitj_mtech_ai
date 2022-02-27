@@ -1169,7 +1169,13 @@ INPUT ./graph_img14_BW.png
 INPUT ./graph_img14_BW.png
 INPUT ./graph_img14_BW.png
 INPUT ./graph_img14_BW.png
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./graph_img15_BW.png
+INPUT ./graph_img15_BW.png
+INPUT graph_img15_BW.png
+INPUT ./graph_img15_BW.png
+INPUT ./graph_img15_BW.png
+INPUT ./graph_img15_BW.png
+INPUT ./graph_img15_BW.png
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss12.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss8.tfm
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmss8.tfm
@@ -1216,5 +1222,3 @@ INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-INPUT /Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb

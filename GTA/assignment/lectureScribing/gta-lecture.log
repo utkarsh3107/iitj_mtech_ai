@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.27)  27 FEB 2022 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.27)  27 FEB 2022 18:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,6 +587,9 @@ LaTeX Warning: Label `fig:Directed graph to find in/out degree' multiply defined
 LaTeX Warning: Label `fig:Directed graph to find in/out degree' multiply defined.
 
 
+LaTeX Warning: Label `fig:Directed graph to find in/out degree' multiply defined.
+
+
 LaTeX Warning: Label `eqn:nonnegative' multiply defined.
 
 ))
@@ -735,40 +738,46 @@ File: graph_img14_BW.png Graphic file (type png)
 <use graph_img14_BW.png>
 Package pdftex.def Info: graph_img14_BW.png  used on input line 109.
 (pdftex.def)             Requested size: 176.15813pt x 176.16429pt.
- [7 <./graph_img12_BW.png> <./graph_img13_BW.png>] [8 <./graph_img14_BW.png>] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+ [7 <./graph_img12_BW.png> <./graph_img13_BW.png>]
+<graph_img15_BW.png, id=129, 301.125pt x 301.125pt>
+File: graph_img15_BW.png Graphic file (type png)
+<use graph_img15_BW.png>
+Package pdftex.def Info: graph_img15_BW.png  used on input line 115.
+(pdftex.def)             Requested size: 176.15813pt x 176.16429pt.
+ [8 <./graph_img14_BW.png> <./graph_img15_BW.png>] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
-<example-figure.pdf, id=145, 257.42361pt x 246.52379pt>
+<example-figure.pdf, id=147, 257.42361pt x 246.52379pt>
 File: example-figure.pdf Graphic file (type pdf)
 <use example-figure.pdf>
-Package pdftex.def Info: example-figure.pdf  used on input line 235.
+Package pdftex.def Info: example-figure.pdf  used on input line 243.
 (pdftex.def)             Requested size: 176.15813pt x 168.69849pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
-) [10 <./example-figure.pdf>] [11] (gta-lecture.aux (Week-05.aux))
+) [11 <./example-figure.pdf>] (gta-lecture.aux (Week-05.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `gta-lecture.out' has not changed.
-(rerunfilecheck)             Checksum: 56AD983EFADB1B63D38FBF7B4F9672C9;1212.
+(rerunfilecheck)             Checksum: F1E6394E401FD8E77FA07D5C9D858DC5;1204.
  ) 
 Here is how much of TeX's memory you used:
- 24826 strings out of 480519
- 483622 string characters out of 2893867
- 738172 words of memory out of 3000000
- 42259 multiletter control sequences out of 15000+600000
- 485386 words of font info for 95 fonts, out of 8000000 for 9000
+ 24831 strings out of 480519
+ 483766 string characters out of 2893867
+ 736169 words of memory out of 3000000
+ 42263 multiletter control sequences out of 15000+600000
+ 485217 words of font info for 94 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 102i,18n,105p,955b,767s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/utkarsh/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on gta-lecture.pdf (11 pages, 445954 bytes).
+ 102i,18n,105p,609b,767s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/utkarsh/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/utkarsh/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on gta-lecture.pdf (11 pages, 452554 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

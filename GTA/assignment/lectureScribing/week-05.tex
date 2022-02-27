@@ -109,11 +109,19 @@ Hence the statement given in false because $D$ can have distinct outdegree.
 \myfig{.375}{graph_img14_BW.png}{Real world example}{fig:Directed graph to find in/out degree}
 
 
-\subsection{New d}
+\subsection{Tree}
+In context of directed graph we can define a tree such that if we take any two vertices we will have a unique path between those two vertices. Simply put trees are connected acyclic graphs.
 
-You might like to put use subsectioning these too.  An alternate way to put in a small subheading for a paragraph is to use the \begin{verbatim} \paragraph \end{verbatim} command.  For example:
- 
-\paragraph{A remembrance by Dantzig.}  The early days were full of intense excitement. Scientists, free at last from war-time pressures, entered the post-war period hungry for new areas of research. The computer came on the scene at just the right time. Economists and mathematicians were intrigued with the possibility that the fundamental problem of optimal allocation of scarce resources could be numerically solved. Not too long after my first meeting with Tucker there was a meeting of the Econometric Society in Wisconsin attended by well-known statisticians and mathematicians like Hotelling and von Neumann, and economists like Koopmans. I was a young unknown and I remember how frightened I was at the idea of presenting for the first time to such a distinguished audience, the concept of linear programming.
+\myfig{.375}{graph_img15_BW.png}{Example of tree}{fig:Directed graph to find in/out degree}
+
+\paragraph{Properties of trees}\begin{itemize}
+    \item Deleting a leaf from an $n$-vertex tree produces an $n-1$ vertex tree.
+    \item Tree is connected and it has no cycle.
+    \item An $n$ vertex contains $n-1$ edges because if it contains one more it will have a cycle and if it has one less it will not be connected. 
+    \item For any pair of vertex $(u, v)$ there exists one and only one path.
+    \item Every edge of a tree is cut-edge.
+    \item Tree is a bipartite graph.
+\end{itemize}
 
 
 \section{Math stuff}
