@@ -124,8 +124,90 @@ In context of directed graph we can define a tree such that if we take any two v
 \end{itemize}
 
 
-\section{Math stuff}
+\subsection{Distance in a graph}
+If graph $G$ has a $u-v$ path, then the distance between $u$ to $v$ is written as $d(u-v)$ is the least length of $u-v$ path. This distance is the shortest distance. For the given graph
+\begin{equation}
+    {\textstyle d(u,v) = 1} 
+ \end{equation}
+Similarly,
+\begin{equation}
+    {\textstyle d(u,w) = \infty} 
+ \end{equation}
+\myfig{.375}{graph_img16_BW.png}{Example of tree}{fig:distance of graph}
 
+\subsection{Diameteter of a graph}
+is the maximum of distanes between any two pair's of vertices.
+Diameter of graph Figure~\ref{fig:distance of graph}. is $\infty$
+
+\subsection{Eccentricity}
+of a vertex $u$ is the maximum distance it has with any node in the graph.
+
+\subsection{Radius}
+denoted as $rad(G)$ is the minimum of eccentricity of all the nodes.
+
+
+\paragraph{Example 1:}For the given graph in ~\ref{fig:value_find1}\begin{itemize}
+    \item $d(B,K) = 4$
+    \item Diameter of the graph $Dia(G) = 4$
+    \item Eccentricity $e(A,B,D,E) = 4$, $e(F) = 2$, $e(C,G,H,I) = 3$, $e(I,J,K,L) = 4$.
+    \item Radius $rad(G) = 2$ 
+\end{itemize}
+\myfig{.375}{graph_img17_BW.png}{King of the tournament}{fig:value_find1}
+
+\paragraph{Example 2:}For the given graph in ~\ref{fig:value_find2} \begin{itemize}
+    \item $d(A,B) = 1$, $d(A,C) = 2$, $d(A,D) = 3$, $d(A,E) = 2$, $d(A,F) = 3$. 
+    \item Diameter of the graph $Dia(G) = 3$.
+    \item Eccentricity $e(A,B,C,D,E,F) = 3$.
+    \item Radius $rad(G) = 3$ 
+\end{itemize}
+\myfig{.375}{graph_img18_BW.png}{King of the tournament}{fig:value_find2}
+
+
+\begin{theorem} If $G$ is a simple graph then $diam(G) \geq 3$ implies $diam(G^c) \leq 3$
+\end{theorem}
+\begin{proof}
+$diam(G) \geq 3$ refers to the fact that there are some nodes that do not share neighbours.
+
+\begin{equation}
+    {\textstyle \exists u,v \in V(G)}
+ \end{equation}  s.t. they do not have common neighbour in $G$. This is because if they have a common neighbour then they can be reached by just two nodes i.e. their diameter will never be greater than 3. Hence structure ~\ref{fig:theoram2} does not exists in G.
+\myfig{.375}{graph_img19_BW.png}{}{fig:theoram2}
+
+Also,
+\begin{equation}
+    {\textstyle \exists u,v \in V(G^c)}
+\end{equation} s.t. they have a common neighbour in $G$ and $u,v$ are non adjacent.
+\end{proof}
+
+
+\paragraph{Problem:}Computer diameter and radius of $K_{m,n}$ \begin{itemize}
+    \item Eceentricity of each node $E(A) = 2$ and $E(B) = 2$ 
+    \item $diam(K_{m,n}) = 2 $
+    \item $rad(K_{m,n}) = 2 $
+\end{itemize}
+
+\begin{tikzpicture}
+    \foreach[count=\i] \lseti/\lsetmi in {A/{$1$,$2$,$3$,$to$,$m$},B/{$1$,$2$,$3$,$to$,$n$}} {
+        \begin{scope}[local bounding box=\lseti, x=2cm, y=0.5cm]
+        \foreach[count=\j] \lj in \lsetmi {
+            \node[minimum width=1em] (n-\j-\lseti) at (\i,-\j) {\lj};
+        }
+        \end{scope}
+        \node[ellipse, draw, fit=(\lseti), 
+        label={[name=l-\lseti]above:$\lseti$}] {};
+    }
+    \draw[->] (n-1-A) -- (n-1-B);
+    \draw[->] (n-1-A) -- (n-2-B);
+    \draw[->] (n-1-A) -- (n-3-B);
+    \draw[->] (n-1-A) -- (n-5-B);
+    \draw[->] (n-2-A) -- (n-1-B);
+    \draw[->] (n-3-A) -- (n-1-B);
+    \draw[->] (n-5-A) -- (n-1-B);
+    \draw[->] (l-A) -- node[above]{$f$}(l-A.center-|l-B.west);
+\end{tikzpicture} 
+
+
+\section{Math stuff}
 \begin{tikzpicture}
     \foreach[count=\i] \lseti/\lsetmi in {A/{$a$,$b$,$c$},B/{5,6,$z$}} {
         \begin{scope}[local bounding box=\lseti, x=2cm, y=0.5cm]
