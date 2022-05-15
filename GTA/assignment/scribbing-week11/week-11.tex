@@ -1,0 +1,83 @@
+%%%%% Change the four parameters in the line below:
+% First is lecture #.
+% Second is lecture title.
+% Third is lecturer (either Anupam Gupta or Ryan O'Donnell).
+% Fourth is your name.
+\lecture{11}{Lecture 22 and 23}{Anand Mishra}{Utkarsh Thusoo}
+
+
+
+Continuation from Lecture 21. 
+\section{Graph Coloring}
+
+\paragraph{Definition:}A k-coloring of graph G is a labelling $ f: V(G) \to S $ where  $ S = \{C_1, C_2 , ... , C_k\}$ is a set of k-colors. A k-coloring is proper if adjacent vertices have different labels.
+\myfig{.375}{example1.png}{Graph coloring example.}{fig:Graph coloring}
+
+\paragraph{Chromatic Number}The least value of k such that $G$ is proper k-colourable. For the above graph chromatic number is 2.
+
+\subsection{Greedy Algos for Graph Coloring}
+\begin{itemize}
+    \item $Step 1$: Choose any vertex and color it.
+    \item $Step 2$: Do the following for remaining $|V| - 1$ vertices.\begin{itemize}
+        \item Choose andy non colored vertex
+        \item Color it with the lowest numbered color that has not been used on any previously colored vertex adjacent to It
+        \item if all previously used colors appears on the adjacent vertex then assign a new vertex to color It
+        \item $S = {R,G,Y,C,B,W}$
+    \end{itemize}
+\end{itemize}
+\myfig{.375}{example2.png}{Greedy algo.}{fig:Greedy algo}
+
+
+\subsection{Clique Size}
+Clique $W(G)$ is a fully connected subgraph. 
+
+\myfig{.375}{example3.png}{Clique of size 4.}{fig:Clique 1}
+\myfig{.375}{example4.png}{Clique of size 3.}{fig:Clique 1}
+\myfig{.375}{example5.png}{Clique of size 2.}{fig:Clique 1}
+
+
+For every graph chromatic number is greater than clique size, $X(G) > W(G)$
+
+\begin{theorem} Prove that $X(G)$ of a graph $G$ = $max(X(G_1), X(G_2) .... X(G_k))$ where $G_1, G_2,..., G_k$ are k compoenets of the graph
+\end{theorem}
+\begin{proof}
+Chromatic number of a graph will be max of chromatic number of different components of that graph. 
+The reason is they are different components and if we use maximum colors to color thr graph with max chromatic number same colors can be used to color the other components also. 
+\end{proof}
+
+\subsection{Bounds on chromatic number}
+$\Delta G$ is maximum degree of any of the nodes.
+
+
+\paragraph{Trivial upper bound} $X(G) \leq |V(G)|$. The number will be equal for the complete graph.
+\paragraph{Trivial lower bound} $X(G) > 0$. The number will be 0 for a null graph
+
+
+
+\paragraph{Star Graph}
+\begin{itemize}
+    \item $\Delta G$ for a star graph having n nodes = $n-1$
+    \item $X(G) \leq n$
+\end{itemize}
+
+
+\paragraph{Complete Graph}\begin{itemize}
+    \item $\Delta G$ for a complete graph having n nodes = $n$
+    \item $X(G) \leq n + 1$
+\end{itemize}
+
+\paragraph{Cycle Graph}\begin{itemize}
+    \item $\Delta G$ for a cycle graph is 2.
+    \item $X(G) = 2$ for even
+    \item $X(G) = 3$ for odd
+\end{itemize}
+
+\paragraph{Wheel Graph}\begin{itemize}
+    \item $\Delta G$ for a wheel graph is $n-1$ becasue entire node will have the maxium degree.
+    \item $X(G) \leq n$
+\end{itemize}
+
+\subsection{Welbh powel bound}
+If $G$ has a degree sequence $d_1 \geq d_2 ... \geq d_n$ then, $X(G) \leq 1 + max min{d_1, i-1}$
+
+You have a degree sequence $d_1 to d_n$ then you can compute $X(G)$
