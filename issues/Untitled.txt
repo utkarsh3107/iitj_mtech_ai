@@ -1,0 +1,34 @@
+Find the longest continuous non-repeating substring from a given string.
+Input -> azcxadbda
+Output -> zcxadb
+
+
+
+
+
+abagcadef
+
+
+Nikhil Johnson to Everyone (3:08 PM)
+Map m = new HashMap();
+String s = "Walmart";
+m.put(s, "Global");
+s = "Tech";
+String output = m.get(s);
+String s = new String("Walmart");
+Nikhil Johnson to Everyone (3:13 PM)
+String s1 = "Walmart";
+int val = 2;
+Nikhil Johnson to Everyone (3:24 PM)
+try {
+    throw new Exception();
+    return 1;
+} catch (Exception e) {
+    return 0;
+} finally {
+    return -1;
+}
+Nikhil Johnson to Everyone (3:44 PM)
+Find the longest continuous non-repeating substring from a given string.
+Input -> azcxadbda
+Output -> zcxadb
